@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ</title>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<div class="chat">
+    <div class="header">
+        <div class="myself">
+            <img src="images/10.jpg" >
+            <h2>忘川</h2>
+        </div>
+    </div>
+    <div id="search" >
+        <input type="text" ng-model="name">
+    </div>
+    <ul >
+        <li ng-repeat="x in person| filter:name track by $index">
+            <img ng-src="{{x.pic}}" style="max-width:50px;max-height:50px;" />
+            {{x.name}}
+            <button ng-click="delete($index)">删除</button>
+            <button ng-click="stick($index)">置顶</button>
+        </li>
+    </ul>
+    <div ng-init="click=false">
+        <button type="button" id="btn1" ng-click="click= !click">Add</button>
+        <div ng-show="click" class="add">
+            <input type="text" placeholder="请输入姓名" ng-model="names">
+            <div class="add-bt">
+                <button ng-click="add()">确定</button>
+                <button ng-click="cancel()">取消</button>
+            </div>
+        </div>
+    </div>
+    <button type="button" id="btn2" ng-click="clear($index)">Clear</button>
+</div>
+<script src="action.js"></script>
+</body>
+</html>

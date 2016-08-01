@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+}
+.body{margin:0 auto}
+.chat{
+    width:400px;
+    height:650px;
+    margin:0 auto;
+    border:1px solid #ccc;
+}
+.header{
+    background:lightskyblue;
+    height:80px;
+    width:100%;
+    clear:both;
+    position:relative;
+}
+.myself{
+    margin:10px 0 0 10px;
+    width:200px;
+    height:50px;
+    float:left;
+}
+h2{
+    float:right;
+    color:#fff;
+    padding-top:10px;
+}
+#search{
+    margin:10px 0 0 4px;
+
+}
+#search input{
+    background: url(../images/search.jpg) no-repeat right center;
+    height:30px;
+    width:390px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+li{
+    height:50px;
+    line-height:50px;
+    text-decoration: none;
+    list-style-type: none;
+    border-bottom:1px solid #ccc ;
+}
+li button{
+    float:right;
+    margin:15px 10px 0 0;
+    border:1px solid  cornflowerblue;
+    border-radius: 2px;
+    width:40px;
+    height:20px;
+}
+button{
+    background-color: #ffffff;
+}
+#btn1, #btn2{
+    position:absolute;
+    width:400px;
+    height:50px;
+}
+#btn1{
+    top:550px;
+}
+#btn2{
+    top:600px;
+}
+.add{
+    background:lightskyblue;
+    position:absolute;
+    top:300px;
+    margin:0 auto;
+    width:400px;
+    height:250px;
+    border:1px solid royalblue;
+    border-radius: 5px;
+}
+.add input{
+    width:280px;
+    height:30px;
+    margin:60px 0 0 50px;
+}
+.add-bt{
+    width:100px;
+    height:30px;
+    margin:50px 0 0 200px;
+}
+.add-bt button{
+    border:1px solid royalblue;
+    border-radius: 2px;
+    width:40px;
+    height:30px;
+
+}
+img{
+    width:40px;
+    height:40px;
+    vertical-align: middle;
+}
